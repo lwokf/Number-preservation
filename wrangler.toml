@@ -3,7 +3,13 @@ name = "esim-api"
 
 # 明确告诉 Cloudflare 我们后端代码的准确路径
 main = "worker/worker.js"
-compatibility_date = "2024-05-31"
+
+# 更新为最新的兼容性日期，满足 Cloudflare 新版要求
+compatibility_date = "2026-05-31"
+
+# 新版 Cloudflare (Wrangler v3.109.0+) 强烈建议添加的日志观测配置，消除构建警告
+[observability]
+enabled = true
 
 # 自动配置定时任务（每天 UTC 02:00，北京时间 10:00）
 [triggers]
