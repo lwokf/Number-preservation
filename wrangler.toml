@@ -18,4 +18,4 @@ crons = ["0 2 * * *"]
 # 自动绑定 KV 数据库
 [[kv_namespaces]]
 binding = "ESIM_DB"
-id = "3786e60b32b94a769f9a36f943dbc066"
+id = "ad8d4083c47345de936162e551d3618b"
